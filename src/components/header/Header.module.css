@@ -1,0 +1,18 @@
+.container {
+  
+  margin: 30px auto;
+}
+
+.nav{
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #dcdcdc;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+}

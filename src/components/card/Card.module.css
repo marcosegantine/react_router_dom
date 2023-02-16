@@ -1,0 +1,15 @@
+.card{
+  margin-bottom: 1rem;
+}
+
+.card img{
+width: 100%;
+overflow: hidden;
+border-radius: 8px;
+}
+
+.card p {
+  margin-top: 0.5rem;
+  font-size: 1.275rem;
+  font-weight: bold;
+}
