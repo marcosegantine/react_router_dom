@@ -1,20 +1,20 @@
-import React from 'react'
-import styles from './Card.module.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styles from './Card.module.css';
 
-const Card = ({data}) => {
+const Card = ({ data }) => {
+  if (data === null) return null;
   return (
     <>
-        {data &&
-          data.map((item) => (
-            <div key={item.id} className={styles.card}>
-              
-                <img src={item.fotos[0].src} alt={item.nome} />
-              
-              <p>{item.nome}</p>
-            </div>
-          ))}
-      </>
-  )
-}
+      {data.map((product) => (
+        <Link to={`product/${product.id}`} key={product.id} className={styles.card}>
+          <img src={product.fotos[0].src} alt={product.fotos[0].titulo} />
 
-export default Card
+          <p>{product.nome}</p>
+        </Link>
+      ))}
+    </>
+  );
+};
+
+export default Card;

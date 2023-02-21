@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import styles from './App.module.css';
+import  './App.css';
 import Header from './components/header/Header';
 import Home from './pages/home/Home';
 import Product from './pages/product/Product';
@@ -16,13 +16,13 @@ function App() {
   
 
   return (
-    <div className={styles.container}>
+    <div className='container'>
       <BrowserRouter>
         <Header />
-        <div className={styles.content}>
+        <div className='content'>
           <Routes>
             <Route path="/" element={<Home data={data} />} />
-            <Route path="product" element={<Product />} />
+            <Route path="product/:id" element={<Product />} />
             <Route path="contact" element={<Contact />} />
           </Routes>
         </div>

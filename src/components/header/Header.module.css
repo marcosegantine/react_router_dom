@@ -16,3 +16,7 @@
   color: black;
   font-weight: bold;
 }
+
+:global(.active) {
+  color: red;
+}

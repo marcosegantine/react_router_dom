@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Home.module.css';
-import { Link } from 'react-router-dom';
 import Head from '../../components/head/Head';
 import Card from '../../components/card/Card';
 
@@ -15,10 +14,10 @@ const Home = () => {
       .then((json) => setData(json));
   }, []);
   return (
-    <div className={styles.container}>
-      <Head title="Ranek" />
+    <section className={styles.container  + ' animeLeft'}>
+      <Head title="Ranek | Home"/>
       <Card data={data}/>
-    </div>
+    </section>
   );
 };
 

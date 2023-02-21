@@ -4,7 +4,10 @@
   gap: 2rem;
   margin-bottom: 30px;
 }
-.productCard{
-  
+
+
+.animeLeft {
+ transform: translateX(-20px);
+ opacity: 1;
 }
 

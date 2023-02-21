@@ -1,0 +1,28 @@
+.contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contactData{
+  margin-top: 2rem;
+}
+
+
+
+.contactData li{
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.contactData li::before{
+  content: '';
+  display: inline-block;
+  height: 4px;
+  width: 20px;
+  background-color: #ddd;
+  margin-right: 10px;
+}
