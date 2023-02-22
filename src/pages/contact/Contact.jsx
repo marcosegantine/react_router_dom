@@ -9,9 +9,9 @@ const Contact = () => {
       <Head title='Ranek | Contact'/>
       <div className={styles.contact  + ' animeLeft'}>
         <div><img src={picture} alt="Typewriter" className={styles.picture}/></div>
-        <div>
+        <div className={styles.contactData}>
           <h1>Get in touch</h1>
-          <ul className={styles.contactData + ' animeLeft'}>
+          <ul>
             <li>reactrouter@react.com</li>
             <li>99999-999999</li>
             <li>Anywhere Street</li>

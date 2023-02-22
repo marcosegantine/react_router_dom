@@ -1,6 +1,6 @@
 .container {
-  
-  margin: 30px auto;
+  margin-bottom: 2rem;
+  margin-left: 0;
 }
 
 .nav{
@@ -17,6 +17,8 @@
   font-weight: bold;
 }
 
-:global(.active) {
-  color: red;
+@media (max-width: 380px){
+  .container{
+    margin-bottom: 1rem;
+  }
 }
